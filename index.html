@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Async Images using IntersectionObserver</title>
+	<style type="text/css">
+		img {
+			width: 100%;
+			display: block;
+			margin: 5.5vh auto 80vh auto;
+			max-width: 30em;
+		}
+		img:last-of-type{ 
+			margin-bottom: 5.5vh;
+		}
+	</style>
+</head>
+<body>
+
+	<img 
+		src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+		data-src="img/crumb.jpg"
+		data-lazy>
+
+	<img 
+		src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+		data-src="img/dark-waffles.jpg"
+		data-lazy>
+
+	<img 
+		src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+		data-src="img/macaron-shells.jpg"
+		data-lazy>
+
+	<script src="async.js"></script>
+</body>
+</html>
